@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content index.html -o css/reducido.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelgh/Bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelgh/Bootstrap/issues"
+  },
+  "homepage": "https://github.com/miguelgh/Bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
