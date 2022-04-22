@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--integración de Bootstrap por cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Pruebas de bootstrap5</title>
+</head>
+<body>
+    <!--Siempre envolver todo con la clase container ya que así está predeterminado en bootstrap>layout-->
+    <div class="container">
+        <!--con la clase row se crea una fila, luego con la clase col-1 se crean las columnas de la fila creada-->
+        <div class="row">
+            <!--las columnas no pueden ser más de 12, si se utilizan menos se piensa en bloques de estos doce espacios-->
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">12</div>
+        </div>
+        <div class="row">
+            <!--Con col-4 se le indica cuanto espacios va a utilizar de la grilla-->
+            <div class="col-4 border">4</div>
+            <div class="col-4 border">4</div>
+            <div class="col-4 border">4</div>
+        </div>
+        <div class="row">
+            <div class="col-3 border">3</div>
+            <div class="col-3 border">3</div>
+            <div class="col-3 border">3</div>
+            <div class="col-3 border">3</div>
+        </div>
+        <div class="row">
+            <!--al agragar los breakpoint se le indica que al llega a la medida "sm" (definida en la documentación de bootstrap) el espacio que va a utilizar va a ser 6 módulos y no 12, lo mismo si el espacio a utilizar es "md" los módulos que va a ocupar serán 3)-->
+            <!--Siempre empezar con un col sin breakpoint porque ese va a ser el que se va a heredar sin no hay valor predeterminado-->
+            <div class="col-12 col-sm-6 col-md-3 border">XD</div>
+            <div class="col-12 col-sm-6 col-md-3 border">XD</div>
+            <div class="col-12 col-sm-6 col-md-3 border">XD</div>
+            <div class="col-12 col-sm-6 col-md-3 border">XD</div>
+        </div>
+    </div>
+    <hr>
+    <main class="container">
+        <div class="row">
+            <!--columna derecha-->
+            <div class="col-12 col-md-9 bg-primary">
+                <!--cuando se crea un row se genera nuevamente el sistema de columnas, eso quiere decir que tenemos disponible 12 columnas para utilizar-->
+                <div class="row">
+                    <div class="col-12 col-md-8 bg-dark">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto voluptas earum ad dolorum error nisi minus? Voluptatibus fugit in a?</p>
+                    </div>
+                    <div class="col-12 col-md-4 bg-success">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto voluptas earum ad dolorum error nisi minus? Voluptatibus fugit in a?</p>
+                    </div>
+                    <div class="col-12 col-md-4 bg-danger">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto voluptas earum ad dolorum error nisi minus? Voluptatibus fugit in a?</p>
+                    </div>
+                    <div class="col-12 col-md-8 bg-info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto voluptas earum ad dolorum error nisi minus? Voluptatibus fugit in a?</p>
+                    </div>
+                </div>
+            </div>
+            <!--columna izquierda-->
+            <div class="col-12 col-md-3 bg-secondary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, aspernatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates, ipsam pariatur natus aut eius?
+            </div>
+        </div>
+    </main>
+</body>
+</html>
